@@ -1,99 +1,136 @@
-# Real-Time Fruit Slice Game
 
-This project is a terminal-based Fruit Ninja–style slicing game using **Pygame**. It introduces students to interactive game design using object-oriented principles and real-time graphical rendering.
+# Fruit Ninja - Pygame
 
----
+A Fruit Ninja-style game developed using Python and Pygame. The player slices fruits using mouse movement, avoids bombs, and tries to achieve the highest possible score.
 
-## What’s Provided
+## Features
 
-A partially working version of a fruit-slicing game with:
+- Fruit slicing using mouse movement
+- Improved collision detection for fast mouse swipes
+- Score tracking
+- Bomb collision detection
+- Life system for missed fruits
+- Game Over screen displaying the final score
+- Easy, Medium, and Hard difficulty levels
+- Restart and exit options
+- Sound effects for fruit slicing, bomb collisions, and Game Over
 
-- Fruit (and the occasional bomb) launched upward from the bottom of the screen, arcing under gravity
-- A mouse-tracked "blade" that slices whatever it touches
-- Lives, score, and a game-over condition when a bomb is sliced or too many fruit are missed
+## Technologies Used
 
-You are expected to **analyze**, **interact with an AI assistant**, and **complete/fix** the game to make it fully functional.
+- Python
+- Pygame
 
-### **UUse an LLM (e.g. ChatGPT or Claude) as your debugging and pair-programming partner for this lab.**
+## Requirements
 
----
+- Python 3.10 or later
+- Pygame
 
-## Getting Started
+## Installation
 
-### Setup
+### 1. Clone the Repository
 
-1. Clone the repo or download the project folder.
-2. Make sure you have Python 3.10+ installed.
-3. Install dependencies:
+```bash
+git clone https://github.com/SruthiVejju/LAB4_FruitNinja_SruthiVejju_PES1UG24CS472-.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd 41_fruit-ninja
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the game:
+## Running the Game
+
+Run the following command from the project directory:
 
 ```bash
 python main.py
 ```
 
+## How to Play
 
----
+1. Move the mouse across the screen to slice fruits.
+2. Slice fruits to increase your score.
+3. Avoid slicing bombs.
+4. Avoid missing too many fruits, as missed fruits reduce your lives.
+5. When the game ends, the Game Over screen displays your final score.
+6. Select a difficulty level to restart the game, or select Exit to close it.
+7. Press `Esc` to exit the game.
 
+## Difficulty Levels
 
-## Tasks to Complete
+| Level | Fruit Spawn Rate | Bomb Probability |
+|-------|------------------|------------------|
+| Easy | Slow | Low |
+| Medium | Moderate | Moderate |
+| Hard | Fast | High |
 
-Each task must be completed using an iterative process involving LLM suggestions and your critical code review.
+## Improvements Implemented
 
-### Task 1: Refine Collision Detection
+### 1. Improved Collision Detection
 
-> Fast swipes sometimes pass right through a fruit without slicing it, even though the blade visually crossed it. Investigate and enhance slice detection so quick swipes register reliably.
+Implemented line-segment collision detection to improve the detection of fast mouse swipes and reduce missed fruit slices.
 
+### 2. Game Over Screen
 
-### Task 2: Implement Game Over Condition
+Added a Game Over screen that displays the final score when a bomb is sliced or all lives are lost.
 
-> Add a screen that displays the final score once a bomb is sliced or the player runs out of lives, then gracefully waits for input instead of just printing to the console.
+### 3. Difficulty Selection
 
+Added Easy, Medium, and Hard difficulty levels with different fruit spawn rates and bomb probabilities.
 
-### Task 3: Add Replay Option
+### 4. Replay Functionality
 
-> After Game Over, allow the user to play again by choosing a difficulty (Easy, Medium, or Hard spawn rate/bomb chance), or exit.
+Added options to restart the game with a selected difficulty or exit the game.
 
+### 5. Sound Effects
 
-### Task 4: Add Sound Feedback
+Added sound effects for fruit slicing, bomb collisions, and the Game Over event.
 
-> Add basic sound effects for slicing a fruit, hitting a bomb, and the game-over moment.
+## Project Structure
 
-
----
-
-## Expected Behavior
-
-- Fruit and bombs launch from the bottom of the screen and arc under gravity
-- Moving the mouse across a fruit slices it and increases the score
-- Slicing a bomb ends the game immediately
-- Letting a fruit fall back off the bottom of the screen without slicing it costs a life
-- The game ends when lives reach zero or a bomb is sliced
-
----
-
-## Folder Structure
-
-```
-fruit-ninja-lite-main/
+```text
+41_fruit-ninja/
 ├── main.py
 ├── requirements.txt
-├── game/
-│   ├── game_engine.py
-│   └── fruit.py
-└── README.md
+├── README.md
+└── game/
+    ├── __init__.py
+    ├── game_engine.py
+    └── fruit.py
 ```
 
----
+## Testing
 
-## Submission Checklist
+The following functionalities were checked:
 
-Submission is only the following three things:
+- Fruit slicing and score updates
+- Collision detection during mouse movement
+- Bomb collision and Game Over behavior
+- Final score display
+- Difficulty selection
+- Restart and exit options
+- Sound effects
 
-- [] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
-- [] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
-- [] The Chat/LLM used page link, with the complete chat history
+## Lab Submission
+
+This project was updated as part of the VibeCoding Lab assignment.
+
+The submission includes:
+
+- Updated source code
+- Original gameplay video (10 seconds)
+- Improved gameplay video (10 seconds)
+- Exported ChatGPT conversation history
+
+## Submitted by:
+
+Sruthi Vejju
+PES1UG24CS472
+PES University
