@@ -97,11 +97,13 @@ Added sound effects for fruit slicing, bomb collisions, and the Game Over event.
 
 ```text
 41_fruit-ninja/
+├──41_fruitninja_before.mp4
+├──41_fruitninja_after.mp4
+├──AI_conversation.pdf
 ├── main.py
 ├── requirements.txt
 ├── README.md
 └── game/
-    ├── __init__.py
     ├── game_engine.py
     └── fruit.py
 ```
