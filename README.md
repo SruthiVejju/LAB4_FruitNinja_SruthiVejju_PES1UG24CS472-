@@ -36,7 +36,7 @@ git clone https://github.com/SruthiVejju/LAB4_FruitNinja_SruthiVejju_PES1UG24CS4
 ### 2. Navigate to the Project Folder
 
 ```bash
-cd 41_fruit-ninja
+cd LAB4_FruitNinja_SruthiVejju_PES1UG24CS472-
 ```
 
 ### 3. Install Dependencies
